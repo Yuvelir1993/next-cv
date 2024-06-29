@@ -68,25 +68,25 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
       name: 'JavaScript',
       icon: FaJsSquare,
       personal_experience:
-        'Good knowledge: JavaScript, TypeScript, including frameworks like React and Node.js',
+        'Most experience is derived from writing server-side logic and front-end components using Ext.js framework. Also a bit experienced in TypeScript, including frameworks like Next.js, React and Node.js, which were used for creating test results dashboard for build pipelines tests results, integrated into multiple teams pipelines. This CV is also created using Next.js and React.',
     },
     {
       name: 'Python',
       icon: FaPython,
       personal_experience:
-        'Good knowledge: Experienced in developing applications using Python for web development, data analysis, and scripting.',
+        'Most knowledge derived from writing organizationally-wide libraries ecosystem, which were reused in build pipelines and local custom development tooling set ups. Have experience of writing Temporal https://temporal.io/ workers in Python. Also, used Python as a core language for creation data testing framework for Elasticsearch and KPIs data proceeding derived from multiple data sources. More about my way of thinking of data proceeding you can read in my article: https://medium.com/@plozovikov/data-mesh-d12768970271',
     },
     {
       name: 'Golang',
       icon: FaGolang,
       personal_experience:
-        'Good knowledge: Skilled in building high-performance applications using Go, including web servers and microservices.',
+        'Built knowledge on GoLang technology during creation deployment and data proceeding workflows in https://temporal.io/ technology in microservices-based system.',
     },
     {
       name: 'Bash',
       icon: FaTerminal,
       personal_experience:
-        'Good knowledge: Proficient in writing shell scripts for automating tasks and managing system operations.',
+        'Basic knowledge which allows me doing simple administrative things when working on remote VMs or during containers debugging.',
     },
   ];
 
