@@ -1,5 +1,4 @@
-import TechStack from '@/app/ui/tech-stack';
-import { lusitana } from '@/app/ui/fonts';
+import TechStack from '@/app/ui/skills';
 import Header from '@/app/ui/header';
 import TextSection from '@/app/ui/headerTextSection';
 

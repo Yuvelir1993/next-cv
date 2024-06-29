@@ -1,4 +1,3 @@
-// components/TechIcon.tsx
 import Image from 'next/image';
 import React from 'react';
 
@@ -15,11 +14,15 @@ const TechIcon: React.FC<TechIconProps> = ({
   imageUrl,
   size = 32,
 }) => {
-  return IconComponent ? (
-    <IconComponent style={{ width: size, height: size }} />
-  ) : imageUrl ? (
-    <Image src={imageUrl} alt={name} width={size} height={size} />
-  ) : null;
+  return (
+    <div style={{ width: size, height: size }}>
+      {IconComponent ? (
+        <IconComponent style={{ width: '100%', height: '100%' }} />
+      ) : imageUrl ? (
+        <Image src={imageUrl} alt={name} layout="fill" objectFit="contain" />
+      ) : null}
+    </div>
+  );
 };
 
 export default TechIcon;

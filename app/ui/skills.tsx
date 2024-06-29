@@ -32,21 +32,21 @@ export default async function TechStack({ type }: TechStackProps) {
                 },
               )}
             >
-              <div className="flex items-center">
+              <div className="flex items-center" style={{ width: '40px' }}>
                 <TechIcon
                   name={skill.name}
                   icon={skill.icon}
                   imageUrl={skill.image_url}
                   size={32}
                 />
-                <div className="ml-4 min-w-0">
-                  <p className="truncate text-sm font-semibold md:text-base">
-                    {skill.name}
-                  </p>
-                  <p className="hidden text-sm text-gray-500 sm:block">
-                    {skill.personal_experience}
-                  </p>
-                </div>
+              </div>
+              <div className="ml-4 flex min-w-0 flex-col">
+                <p className="truncate text-sm font-semibold md:text-base">
+                  {skill.name}
+                </p>
+                <p className="hidden text-sm text-gray-500 sm:block">
+                  {skill.personal_experience}
+                </p>
               </div>
             </div>
           ))}
