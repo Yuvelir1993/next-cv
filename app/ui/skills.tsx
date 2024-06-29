@@ -1,7 +1,7 @@
-import clsx from 'clsx';
+import React from 'react';
 import { lusitana } from '@/app/ui/fonts';
 import { Skill, fetchSkills } from '@/app/lib/skillsData';
-import TechIcon from '@/app/ui/techIcon';
+import SkillComponent from '@/app/ui/skill';
 
 interface TechStackProps {
   type: 'dev' | 'ops';
@@ -23,32 +23,7 @@ export default async function TechStack({ type }: TechStackProps) {
       <div className="mt-4 flex w-full grow flex-col justify-between rounded-xl bg-gray-50 p-4">
         <div className="bg-white px-6">
           {skills.map((skill, i) => (
-            <div
-              key={skill.name}
-              className={clsx(
-                'flex flex-row items-center justify-between py-4',
-                {
-                  'border-t': i !== 0,
-                },
-              )}
-            >
-              <div className="flex items-center" style={{ width: '40px' }}>
-                <TechIcon
-                  name={skill.name}
-                  icon={skill.icon}
-                  imageUrl={skill.image_url}
-                  size={32}
-                />
-              </div>
-              <div className="ml-4 flex min-w-0 flex-col">
-                <p className="truncate text-sm font-semibold md:text-base">
-                  {skill.name}
-                </p>
-                <p className="hidden text-sm text-gray-500 sm:block">
-                  {skill.personal_experience}
-                </p>
-              </div>
-            </div>
+            <SkillComponent key={skill.name} skill={skill} index={i} />
           ))}
         </div>
       </div>
