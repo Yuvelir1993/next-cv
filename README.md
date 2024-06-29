@@ -14,3 +14,9 @@ CV project
 
 `npm start`
   Runs the built app in production mode.
+
+`npm-check-updates`
+  Check updates for all dependencies.
+
+`ncu -u`
+  Install all new found updates.
