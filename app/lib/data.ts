@@ -1,4 +1,4 @@
-export async function fetchOpsSkills() {
+export async function fetchSkills() {
   return [
     {
       name: 'AWS',

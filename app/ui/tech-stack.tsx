@@ -2,20 +2,20 @@ import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
-import { fetchOpsSkills } from '@/app/lib/data';
+import { fetchSkills } from '@/app/lib/data';
 
 export default async function TechStack() {
-  const latestInvoices = await fetchOpsSkills();
+  const skills = await fetchSkills();
 
   return (
     <div className="flex w-full flex-col md:col-span-4">
       <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>Ops</h2>
       <div className="flex grow flex-col justify-between rounded-xl bg-gray-50 p-4">
         <div className="bg-white px-6">
-          {latestInvoices.map((invoice, i) => {
+          {skills.map((skill, i) => {
             return (
               <div
-                key={invoice.name}
+                key={skill.name}
                 className={clsx(
                   'flex flex-row items-center justify-between py-4',
                   {
@@ -25,18 +25,18 @@ export default async function TechStack() {
               >
                 <div className="flex items-center">
                   <Image
-                    src={invoice.image_url}
-                    alt={`${invoice.name}'s profile picture`}
+                    src={skill.image_url}
+                    alt={`${skill.name}'s profile picture`}
                     className="mr-4 rounded-full"
                     width={32}
                     height={32}
                   />
                   <div className="min-w-0">
                     <p className="truncate text-sm font-semibold md:text-base">
-                      {invoice.name}
+                      {skill.name}
                     </p>
                     <p className="hidden text-sm text-gray-500 sm:block">
-                      {invoice.personal_experience}
+                      {skill.personal_experience}
                     </p>
                   </div>
                 </div>
