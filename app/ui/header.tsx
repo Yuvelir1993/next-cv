@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
-import backgroundImage from '/public/header.jpg';
+import backgroundImage from '/public/header.png';
 import avatarImage from '/public/avatar.jpg';
 import SocialMedia from './socialMedia';
 
 const Header: React.FC = () => {
   return (
-    <header className="relative h-52 w-full overflow-hidden bg-gray-200">
+    <header className="relative h-52 w-full overflow-hidden bg-indigo-50">
       <div className="absolute left-0 top-0 h-full w-full">
         <Image
           src={backgroundImage}

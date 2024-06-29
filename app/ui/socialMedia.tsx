@@ -10,10 +10,10 @@ const SocialMedia: React.FC = () => {
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center space-x-2"
+          className="flex items-center space-x-2 rounded-md bg-gray-800 bg-opacity-10"
         >
           <link.icon className={`h-8 w-8 ${link.colorClass}`} />
-          <span className="text-lg text-gray-700 hover:text-gray-900">
+          <span className="text-lg text-gray-900 hover:text-slate-50">
             {link.name}
           </span>
         </a>
