@@ -1,4 +1,3 @@
-// pages/index.tsx
 import TechStack from '@/app/ui/tech-stack';
 import { lusitana } from '@/app/ui/fonts';
 import Header from '@/app/ui/header';
@@ -12,8 +11,8 @@ export default function Page() {
       </div>
       <TextSection />
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
-        <TechStack />
-        <TechStack />
+        <TechStack type="dev" />
+        <TechStack type="ops" />
       </div>
     </main>
   );
