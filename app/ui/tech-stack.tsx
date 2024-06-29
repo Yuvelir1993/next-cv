@@ -1,5 +1,3 @@
-// components/TechStack.tsx
-import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import { lusitana } from '@/app/ui/fonts';
 import { Skill, fetchSkills } from '@/app/lib/skillsData';
@@ -11,13 +9,18 @@ interface TechStackProps {
 
 export default async function TechStack({ type }: TechStackProps) {
   const skills: Skill[] = await fetchSkills(type);
+  const devDescription = 'Skilled in software development and programming.';
+  const opsDescription = 'Expert in operations and infrastructure management.';
 
   return (
-    <div className="flex w-full flex-col md:col-span-4">
-      <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
+    <div className="flex w-full flex-col items-center md:col-span-4">
+      <h2 className={`${lusitana.className} text-center text-xl md:text-2xl`}>
         {type === 'ops' ? 'Ops' : 'Dev'}
       </h2>
-      <div className="flex grow flex-col justify-between rounded-xl bg-gray-50 p-4">
+      <p className="mt-2 text-center text-sm text-gray-500">
+        {type === 'ops' ? opsDescription : devDescription}
+      </p>
+      <div className="mt-4 flex w-full grow flex-col justify-between rounded-xl bg-gray-50 p-4">
         <div className="bg-white px-6">
           {skills.map((skill, i) => (
             <div
