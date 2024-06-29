@@ -92,3 +92,42 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
 
   return type === 'ops' ? opsSkills : devSkills;
 };
+
+export async function fetchPassedCourses() {
+  return [
+    { id: 1, title: 'Advanced Python Programming', date: '2023-01-15' },
+    {
+      id: 2,
+      title: 'Docker Mastery: The Complete Toolset',
+      date: '2023-02-20',
+    },
+    {
+      id: 3,
+      title: 'JavaScript Algorithms and Data Structures',
+      date: '2023-03-10',
+    },
+  ];
+}
+
+export async function fetchReadBooks() {
+  return [
+    {
+      id: 1,
+      title: 'Clean Code: A Handbook of Agile Software Craftsmanship',
+      author: 'Robert C. Martin',
+      date: '2022-12-01',
+    },
+    {
+      id: 2,
+      title: 'Design Patterns: Elements of Reusable Object-Oriented Software',
+      author: 'Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides',
+      date: '2023-01-10',
+    },
+    {
+      id: 3,
+      title: 'The Pragmatic Programmer: Your Journey to Mastery',
+      author: 'Andrew Hunt, David Thomas',
+      date: '2023-02-05',
+    },
+  ];
+}
