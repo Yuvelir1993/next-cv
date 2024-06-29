@@ -3,11 +3,11 @@ import { lusitana } from '@/app/ui/fonts';
 import { Skill, fetchSkills } from '@/app/lib/skillsData';
 import SkillComponent from '@/app/ui/skill';
 
-interface TechStackProps {
+interface SkillsProps {
   type: 'dev' | 'ops';
 }
 
-export default async function TechStack({ type }: TechStackProps) {
+export default async function Skills({ type }: SkillsProps) {
   const skills: Skill[] = await fetchSkills(type);
   const devDescription = 'Skilled in software development and programming.';
   const opsDescription = 'Expert in operations and infrastructure management.';

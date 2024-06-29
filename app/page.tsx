@@ -1,4 +1,4 @@
-import TechStack from '@/app/ui/skills';
+import Skills from '@/app/ui/skills';
 import Header from '@/app/ui/header';
 import TextSection from '@/app/ui/headerTextSection';
 
@@ -10,8 +10,8 @@ export default function Page() {
       </div>
       <TextSection />
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
-        <TechStack type="dev" />
-        <TechStack type="ops" />
+        <Skills type="dev" />
+        <Skills type="ops" />
       </div>
     </main>
   );
