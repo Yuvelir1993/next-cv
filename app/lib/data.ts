@@ -46,7 +46,7 @@ export async function fetchSkills(type: 'dev' | 'ops') {
         'Skilled in building high-performance applications using Go, including web servers and microservices.',
     },
     {
-      name: 'JavaScript/TypeScript',
+      name: 'JavaScript',
       image_url: '/public/technologies/javascript.png',
       personal_experience:
         'Proficient in developing modern web applications using JavaScript and TypeScript, including frameworks like React and Node.js.',
@@ -58,7 +58,7 @@ export async function fetchSkills(type: 'dev' | 'ops') {
         'Experienced in developing enterprise-level applications using Java, including Spring and Hibernate.',
     },
     {
-      name: 'Shell Scripting',
+      name: 'Bash',
       image_url: '/public/technologies/shell.png',
       personal_experience:
         'Proficient in writing shell scripts for automating tasks and managing system operations.',
