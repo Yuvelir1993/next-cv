@@ -55,34 +55,38 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
 
   const devSkills: Skill[] = [
     {
-      name: 'Python',
-      icon: FaPython,
-      personal_experience:
-        'Experienced in developing applications using Python for web development, data analysis, and scripting.',
-    },
-    {
-      name: 'Golang',
-      icon: FaGolang,
-      personal_experience:
-        'Skilled in building high-performance applications using Go, including web servers and microservices.',
+      name: 'Java',
+      icon: FaJava,
+      personal_experience: `Main experience gained from:
+      1) Developing REST APIs for BOC products like https://www.adonis-community.com/en/. 
+      Experienced in migration java - based solutions from old jdk-8/11 to new jdk-17/21 and running them on different Tomcat environments like Tomcat 9 and Tomcat 10.1 with all necessary javax/jakarta adaptations and ensuring backwards compatibility of codebases to still be able support old versions.
+      2) Decent experience gained in creation platform-layer Gradle plugins for multiple teams reused in the whole organization for building and testing modules/libraries and products themselves. 
+      Experienced in smooth gradual builds migration from old-based Gradle 6.5 + jdk 8/11 build to new-based Gradle 8.7 + jdk 17/21 - based modules/libraries/products builds on the organization level. 
+      Experienced in using frameworks/libraries: Jersey, TestNG, Maven, Ant (not a favorite one ;)), Gradle`,
     },
     {
       name: 'JavaScript',
       icon: FaJsSquare,
       personal_experience:
-        'Proficient in developing modern web applications using JavaScript and TypeScript, including frameworks like React and Node.js.',
+        'Good knowledge: JavaScript, TypeScript, including frameworks like React and Node.js',
     },
     {
-      name: 'Java',
-      icon: FaJava,
+      name: 'Python',
+      icon: FaPython,
       personal_experience:
-        'Experienced in developing enterprise-level applications using Java, including Spring and Hibernate.',
+        'Good knowledge: Experienced in developing applications using Python for web development, data analysis, and scripting.',
+    },
+    {
+      name: 'Golang',
+      icon: FaGolang,
+      personal_experience:
+        'Good knowledge: Skilled in building high-performance applications using Go, including web servers and microservices.',
     },
     {
       name: 'Bash',
       icon: FaTerminal,
       personal_experience:
-        'Proficient in writing shell scripts for automating tasks and managing system operations.',
+        'Good knowledge: Proficient in writing shell scripts for automating tasks and managing system operations.',
     },
   ];
 
