@@ -11,26 +11,20 @@ interface SkillProps {
 const SkillComponent: React.FC<SkillProps> = ({ skill, index }) => {
   return (
     <div
-      className={clsx('flex flex-row items-center justify-between py-4', {
-        'border-t': index !== 0, // Use index here instead of i
+      className={clsx('flex flex-col py-4', {
+        'border-t': index !== 0, // Add border-t conditionally
       })}
     >
-      <div className="mb-2 flex items-center sm:mb-0">
+      <div className="flex items-center">
         <TechIcon
           name={skill.name}
           icon={skill.icon}
           imageUrl={skill.image_url}
           size={32}
         />
-        <p className="ml-2 truncate text-sm font-semibold md:text-base">
-          {skill.name}
-        </p>
+        <h2 className="ml-4 text-lg font-semibold">{skill.name}</h2>
       </div>
-      <div className="ml-4 min-w-0">
-        <p className="hidden text-sm text-gray-500 sm:block">
-          {skill.personal_experience}
-        </p>
-      </div>
+      <p className="mt-2 text-sm text-gray-500">{skill.personal_experience}</p>
     </div>
   );
 };
