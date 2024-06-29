@@ -1,6 +1,8 @@
+// components/TechStack.tsx
+import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import { lusitana } from '@/app/ui/fonts';
-import { fetchSkills } from '@/app/lib/data';
+import { Skill, fetchSkills } from '@/app/lib/skillsData';
 import TechIcon from '@/app/ui/techIcon';
 
 interface TechStackProps {
@@ -8,7 +10,7 @@ interface TechStackProps {
 }
 
 export default async function TechStack({ type }: TechStackProps) {
-  const skills = await fetchSkills(type);
+  const skills: Skill[] = await fetchSkills(type);
 
   return (
     <div className="flex w-full flex-col md:col-span-4">
@@ -30,6 +32,7 @@ export default async function TechStack({ type }: TechStackProps) {
               <div className="flex items-center">
                 <TechIcon
                   name={skill.name}
+                  icon={skill.icon}
                   imageUrl={skill.image_url}
                   size={32}
                 />
@@ -44,6 +47,10 @@ export default async function TechStack({ type }: TechStackProps) {
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex items-center pb-2 pt-6">
+          <ArrowPathIcon className="h-5 w-5 text-gray-500" />
+          <h3 className="ml-2 text-sm text-gray-500">Updated just now</h3>
         </div>
       </div>
     </div>

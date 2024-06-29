@@ -1,21 +1,25 @@
+// components/TechIcon.tsx
 import Image from 'next/image';
 import React from 'react';
-import { getIcon } from '@/app/lib/getIcon';
 
 interface TechIconProps {
   name: string;
-  imageUrl: string;
+  icon?: React.ElementType;
+  imageUrl?: string;
   size?: number;
 }
 
-const TechIcon: React.FC<TechIconProps> = ({ name, imageUrl, size = 32 }) => {
-  const IconComponent = getIcon(name);
-
+const TechIcon: React.FC<TechIconProps> = ({
+  name,
+  icon: IconComponent,
+  imageUrl,
+  size = 32,
+}) => {
   return IconComponent ? (
-    <IconComponent className={`h-${size} w-${size}`} />
-  ) : (
+    <IconComponent style={{ width: size, height: size }} />
+  ) : imageUrl ? (
     <Image src={imageUrl} alt={name} width={size} height={size} />
-  );
+  ) : null;
 };
 
 export default TechIcon;
