@@ -1,22 +1,23 @@
 # General
+
 CV project
 
 ## Dev
 
 `npm i`
-  Install packages.
+Install packages.
 
 `npm run dev`
-  Starts the development server.
+Starts the development server.
 
 `npm run build`
-  Builds the app for production.
+Builds the app for production.
 
 `npm start`
-  Runs the built app in production mode.
+Runs the built app in production mode.
 
 `npm-check-updates`
-  Check updates for all dependencies.
+Check updates for all dependencies.
 
 `ncu -u`
-  Install all new found updates.
+Install all new found updates.

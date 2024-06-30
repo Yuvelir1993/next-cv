@@ -45,8 +45,7 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'Linux',
       icon: FcLinux,
-      personal_experience:
-        'Experience with Linux.',
+      personal_experience: 'Experience with Linux.',
     },
     {
       name: 'ELK Stack',
@@ -57,8 +56,7 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'Prometheus/Grafana',
       icon: SiPrometheus,
-      personal_experience:
-        'Experience with Prometheus and Grafana.',
+      personal_experience: 'Experience with Prometheus and Grafana.',
     },
     {
       name: 'OpenTelemetry',
@@ -75,8 +73,7 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'Fluentbit',
       icon: SiFluentbit,
-      personal_experience:
-        'Experience with Fluentbit.',
+      personal_experience: 'Experience with Fluentbit.',
     },
     {
       name: 'Jaeger',
