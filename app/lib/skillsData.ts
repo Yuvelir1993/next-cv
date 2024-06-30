@@ -23,6 +23,7 @@ import {
   SiNomad,
   SiJfrog,
   SiFluentbit,
+  SiPrometheus,
 } from 'react-icons/si';
 import { TbSql } from 'react-icons/tb';
 import { DiGroovy } from 'react-icons/di';
@@ -52,6 +53,12 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
       icon: SiElasticsearch,
       personal_experience:
         'Experience with the ELK Stack (Elasticsearch, Logstash, Kibana) for log management and data analysis.',
+    },
+    {
+      name: 'Prometheus/Grafana',
+      icon: SiPrometheus,
+      personal_experience:
+        'Experience with Prometheus and Grafana.',
     },
     {
       name: 'OpenTelemetry',
