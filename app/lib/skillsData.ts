@@ -76,12 +76,6 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
       personal_experience: 'Experience with Fluentbit.',
     },
     {
-      name: 'Jaeger',
-      icon: SiJaeger,
-      personal_experience:
-        'Experience with Jaeger for distributed tracing and monitoring.',
-    },
-    {
       name: 'SonarQube',
       icon: SiSonarqube,
       personal_experience:
