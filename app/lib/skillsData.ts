@@ -1,14 +1,5 @@
 import { IconType } from 'react-icons';
-import {
-  FaAws,
-  FaDocker,
-  FaJenkins,
-  FaPython,
-  FaJsSquare,
-  FaJava,
-  FaTerminal,
-  FaGitAlt,
-} from 'react-icons/fa';
+import { FaAws, FaDocker, FaJenkins, FaPython, FaJsSquare, FaJava, FaTerminal, FaGitAlt } from 'react-icons/fa';
 import { FaGolang, FaGears, FaHtml5 } from 'react-icons/fa6';
 import {
   SiTerraform,
@@ -155,8 +146,7 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'Kubernetes',
       icon: SiKubernetes,
-      personal_experience:
-        'Only basic knowledge of main concepts. 🚀 Currently, one of the main experience achieving goals for 2024.',
+      personal_experience: 'Only basic knowledge of main concepts. 🚀 Currently, one of the main experience achieving goals for 2024.',
     },
   ];
 
@@ -287,8 +277,7 @@ export async function fetchReadBooks() {
     },
     {
       id: 9,
-      title:
-        'The Phoenix Project: A Novel about It, Devops, and Helping Your Business Win',
+      title: 'The Phoenix Project: A Novel about It, Devops, and Helping Your Business Win',
       author: 'Gene Kim, Kevin Behr, George Spafford',
     },
     { id: 10, title: 'The Unicorn Project', author: 'Gene Kim' },

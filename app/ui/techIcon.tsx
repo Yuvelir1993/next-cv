@@ -8,12 +8,7 @@ interface TechIconProps {
   size?: number;
 }
 
-const TechIcon: React.FC<TechIconProps> = ({
-  name,
-  icon: IconComponent,
-  imageUrl,
-  size = 32,
-}) => {
+const TechIcon: React.FC<TechIconProps> = ({ name, icon: IconComponent, imageUrl, size = 32 }) => {
   return (
     <div style={{ width: size, height: size }}>
       {IconComponent ? (

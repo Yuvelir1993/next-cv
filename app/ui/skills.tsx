@@ -14,12 +14,8 @@ export default async function Skills({ type }: SkillsProps) {
 
   return (
     <div className="flex w-full flex-col items-center md:col-span-4">
-      <h2 className={`${lusitana.className} text-center text-xl md:text-2xl`}>
-        {type === 'ops' ? 'Ops' : 'Dev'}
-      </h2>
-      <p className="mt-2 text-center text-sm text-gray-500">
-        {type === 'ops' ? opsDescription : devDescription}
-      </p>
+      <h2 className={`${lusitana.className} text-center text-xl md:text-2xl`}>{type === 'ops' ? 'Ops' : 'Dev'}</h2>
+      <p className="mt-2 text-center text-sm text-gray-500">{type === 'ops' ? opsDescription : devDescription}</p>
       <div className="mt-4 flex w-full grow flex-col justify-between rounded-xl bg-gray-50 p-4">
         <div className="bg-white px-6">
           {skills.map((skill, i) => (
