@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 
 const Hobbies: React.FC = () => {
   return (
