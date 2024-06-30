@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 const Hobbies: React.FC = () => {
   return (
@@ -15,39 +16,62 @@ const Hobbies: React.FC = () => {
       <div className="mb-6">
         <h3 className="text-xl font-semibold">Photographer</h3>
         <p className="text-base text-gray-700">
-          Capturing moments and scenes, experimenting with different angles and
-          lighting.
+          My past experience is making both commercial and just-for-myself and
+          friends photos. Join my{' '}
+          <a
+            href="https://photolozovikov-main.web.app/"
+            className="text-blue-600 underline hover:text-blue-800"
+          >
+            photo.lozovikov
+          </a>
+          web page for more 📸
         </p>
       </div>
 
       <div className="mb-6">
         <h3 className="text-xl font-semibold">Fragrances</h3>
         <p className="text-base text-gray-700">
-          Exploring scents, understanding notes, and collecting unique
-          fragrances.
+          I'm quite experienced person in niche fragrances, also having personal
+          collection. But no worries, I am not the person who will irritate you
+          in the office by applying the whole bottle 😄 Also, sharing my
+          knowledges, experience and emotions on my{' '}
+          <a
+            href="www.youtube.com/@lozovikov"
+            className="text-blue-600 underline hover:text-blue-800"
+          >
+            youtube channel
+          </a>
+          🎬
         </p>
       </div>
 
       <div className="mb-6">
         <h3 className="text-xl font-semibold">Music - Guitar</h3>
         <p className="text-base text-gray-700">
-          Playing guitar, learning new songs, and exploring different music
-          genres.
+          Playing guitar for 13+ years. Started as a tryout thing to repeat
+          Three Days Grace - Never Too Late cover from unknown guy from youtube,
+          continued as instrumental metalcore songwriter, and currently
+          exploring djent, blues, jazz and so-called "neo-soul" music styles.
+          And just expressing myself through this beautiful instrument and
+          learning life through music 🎸
         </p>
       </div>
 
       <div className="mb-6">
         <h3 className="text-xl font-semibold">Articles Writing</h3>
         <p className="text-base text-gray-700">
-          Writing about technology, hobbies, and personal experiences.
+          Writing about technologies topics I'm excited the most at the moment
+          and being confident that my shared knowledges, experiences and ideas
+          will help readers to enrich their own approaches 💪
         </p>
       </div>
 
       <div>
         <h3 className="text-xl font-semibold">Gym and Other Sports</h3>
         <p className="text-base text-gray-700">
-          Staying fit through gym workouts and enjoying various sports
-          activities.
+          Gym is more than a hobby - it is my life framework of doing simple
+          thing daily despite of things happening around. It taught me how to
+          keep focus, which I'm using in all other life areas.
         </p>
       </div>
     </div>
