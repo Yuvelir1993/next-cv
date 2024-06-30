@@ -38,7 +38,8 @@ const MySummary: React.FC = () => {
           At some point, I was invited to join Austrian team in a DevOps role
           which brought me next experiences in doing more Ops-oriented things
           and taking care of software operating on scale of product and
-          solutions teams from different countries.
+          solutions teams from different countries. Also, key responsibility
+          became pipeline - driven delivery of internal software.
         </p>
       </div>
 
