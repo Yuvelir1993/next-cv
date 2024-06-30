@@ -178,12 +178,12 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
         Experienced in smooth gradual builds migration from old-based Gradle 6.5 + jdk 8/11 build to new-based Gradle 8.7 + jdk 17/21 - based modules/libraries/products builds on the organization level.`,
       related_technologies: `
       Experienced in using frameworks/libraries/runtime environments:
+      - Gradle
+      - Tomcat
       - Jersey
       - TestNG
-      - Tomcat
       - Maven
-      - Ant (not a favorite one 😉)
-      - Gradle`,
+      - Ant (not a favorite one 😉)`,
     },
     {
       name: 'JavaScript',
