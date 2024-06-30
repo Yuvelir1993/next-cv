@@ -9,8 +9,11 @@ import {
   FaTerminal,
 } from 'react-icons/fa';
 
-import { FaGolang } from 'react-icons/fa6';
+import { FaGolang, FaGears } from 'react-icons/fa6';
 import { SiTerraform, SiKubernetes } from 'react-icons/si';
+import { TbSql } from 'react-icons/tb';
+import { DiGroovy } from 'react-icons/di';
+import { GiGears } from 'react-icons/gi';
 
 export interface Skill {
   name: string;
@@ -64,9 +67,10 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
   2️⃣ Decent experience gained in creation platform-layer Gradle plugins for multiple teams reused in the whole organization for building and testing modules/libraries and products themselves.
         Experienced in smooth gradual builds migration from old-based Gradle 6.5 + jdk 8/11 build to new-based Gradle 8.7 + jdk 17/21 - based modules/libraries/products builds on the organization level.`,
       related_technologies: `
-      Experienced in using frameworks/libraries:
+      Experienced in using frameworks/libraries/runtime environments:
       - Jersey
       - TestNG
+      - Tomcat
       - Maven
       - Ant (not a favorite one 😉)
       - Gradle`,
@@ -81,7 +85,8 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
       - Next.js
       - React
       - Node.js
-      - Jest`,
+      - Jest
+      - jQuery`,
     },
     {
       name: 'Python',
@@ -104,8 +109,22 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'Bash',
       icon: FaTerminal,
-      personal_experience:
-        `Having basic knowledge which allows me doing simple administrative things when working on remote VMs or during containers debugging. Also, used bash scripts for 1-click [ELK stack](https://www.elastic.co/elastic-stack) local dev installation.`,
+      personal_experience: `Having basic knowledge which allows me doing simple administrative things when working on remote VMs or during containers debugging. Also, used bash scripts for 1-click [ELK stack](https://www.elastic.co/elastic-stack) local dev installation.`,
+    },
+    {
+      name: 'SQL',
+      icon: TbSql,
+      personal_experience: `Having basic experience of writing queries for MsSQL database import, export and backups which are part of an automated ecosystem.`,
+    },
+    {
+      name: 'Groovy',
+      icon: DiGroovy,
+      personal_experience: `Gained experience from writing Jenkinsfiles and custom Gradle tasks logic.`,
+    },
+    {
+      name: 'Algorithms',
+      icon: FaGears,
+      personal_experience: `Having experience in creating algorithms, including working with graphs. One of prominent projects where I implemented those knowledges are [BPMN Process Simulation](https://docs.boc-group.com/adonis/en/docs/16.0/user_manual/sim-000000/) and [BPMN Process Stepper](https://docs.boc-group.com/adonis/en/docs/16.0/user_manual/pst-000000/).`,
     },
   ];
 
