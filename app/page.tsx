@@ -6,6 +6,7 @@ import Header from '@/app/ui/header';
 import TextSection from '@/app/ui/headerTextSection';
 import Courses from '@/app/ui/courses';
 import Books from '@/app/ui/books';
+import MyJourney from '@/app/ui/myJourney';
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
         <Header />
       </div>
       <TextSection />
+      <MyJourney />
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
         <Skills type="dev" />
         <Skills type="ops" />
