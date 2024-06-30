@@ -16,15 +16,14 @@ const Courses: React.FC = () => {
 
   return (
     <div className="rounded-lg bg-gray-100 p-4">
-      <h3 className="mb-4 text-lg font-semibold">Passed Courses</h3>
-      <ul className="space-y-2">
+      <h3 className="mb-4 text-lg font-semibold">🎓 Passed Courses</h3>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {courses.map((course) => (
-          <li key={course.id}>
+          <div key={course.id} className="rounded bg-white p-2 shadow">
             <p className="font-semibold">{course.title}</p>
-            <p className="text-sm text-gray-500">{course.date}</p>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

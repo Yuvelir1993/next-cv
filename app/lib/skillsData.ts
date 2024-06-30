@@ -239,42 +239,87 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
 
   return type === 'ops' ? opsSkills : devSkills;
 };
-
 export async function fetchPassedCourses() {
   return [
-    { id: 1, title: 'Advanced Python Programming', date: '2023-01-15' },
+    { id: 1, title: 'EDU Devstyle - Droga Nowoczesnego Architekta' },
+    { id: 2, title: 'EDU Devstyle - Legacy Fighter' },
+    { id: 3, title: 'LinuxFoundationX LFS101x' },
+    { id: 4, title: 'Advanced CSS Concepts - Microsoft - DEV218x' },
+    { id: 5, title: 'Introduction to Bootstrap - Microsoft - DEV203x' },
     {
-      id: 2,
-      title: 'Docker Mastery: The Complete Toolset',
-      date: '2023-02-20',
+      id: 6,
+      title: 'Introduction to HTML and JavaScript - Microsoft - DEV211.1x',
     },
     {
-      id: 3,
-      title: 'JavaScript Algorithms and Data Structures',
-      date: '2023-03-10',
+      id: 7,
+      title: 'HTML5 Coding Essentials and Best Practices - W3Cx - HTML5.1x',
     },
+    { id: 8, title: 'JavaScript Introduction - W3Cx' },
+    { id: 9, title: 'Java Fundamentals: Collections - by Richard Warburton' },
+    {
+      id: 10,
+      title: 'Nature, in Code: Biology in JavaScript - EPFLx - NiC1.0x',
+    },
+    { id: 11, title: 'Programming for the Web with JavaScript - PennX - SD4x' },
+    { id: 12, title: 'Responsive Images by GOOGLE - Udacity' },
+    { id: 13, title: 'Small courses on HackerRank and CodeAcademy' },
+    { id: 14, title: 'Linux Journey from https://linuxjourney.com/' },
   ];
 }
 
 export async function fetchReadBooks() {
   return [
+    { id: 1, title: 'Clean Code', author: 'Robert C. Martin' },
+    { id: 2, title: 'Clean Architecture', author: 'Robert C. Martin' },
+    { id: 3, title: 'Modern Operating Systems', author: 'Andrew S. Tanenbaum' },
     {
-      id: 1,
-      title: 'Clean Code: A Handbook of Agile Software Craftsmanship',
-      author: 'Robert C. Martin',
-      date: '2022-12-01',
+      id: 4,
+      title: 'Working Effectively with Legacy Code',
+      author: 'Michael Feathers',
+    },
+    { id: 5, title: 'Modular JavaScript', author: 'Nicolas Bevacqua' },
+    { id: 6, title: 'Moder JavaScript', author: 'Nicolas Bevacqua' },
+    { id: 7, title: 'JavaScript. Patterns', author: 'Stoyan Stefanov' },
+    {
+      id: 8,
+      title: 'The philosophy of DevOps. The Art of IT',
+      author: 'Jennifer Davis, Catherine Daniels',
     },
     {
-      id: 2,
-      title: 'Design Patterns: Elements of Reusable Object-Oriented Software',
-      author: 'Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides',
-      date: '2023-01-10',
+      id: 9,
+      title:
+        'The Phoenix Project: A Novel about It, Devops, and Helping Your Business Win',
+      author: 'Gene Kim, Kevin Behr, George Spafford',
+    },
+    { id: 10, title: 'The Unicorn Project', author: 'Gene Kim' },
+    {
+      id: 11,
+      title: 'The Goal: A Process of Ongoing Improvement',
+      author: 'Eliyahu M. Goldratt, Jeff Cox',
     },
     {
-      id: 3,
-      title: 'The Pragmatic Programmer: Your Journey to Mastery',
-      author: 'Andrew Hunt, David Thomas',
-      date: '2023-02-05',
+      id: 12,
+      title: 'The Pragmatic Programmer',
+      author: 'David Thomas, Andrew Hunt',
+    },
+    {
+      id: 13,
+      title: 'Cloud Native Architecture',
+      author: 'Shivakumar R. Goniwada',
+    },
+    { id: 14, title: 'Data Mesh', author: 'Zhamak Dehghani' },
+    {
+      id: 15,
+      title: 'Sistributed Systems',
+      author: 'Maarten Van Steen, Andrew S.Tanenbaum',
+    },
+    { id: 16, title: 'Docker Deep Dive', author: 'Nigel Poulton' },
+    { id: 17, title: 'How Linux Works', author: 'Brian Ward' },
+    { id: 18, title: 'Practical OpenTelemetry', author: 'Daniel Gomez Blanco' },
+    {
+      id: 19,
+      title: 'The Pragmatic Programmer',
+      author: 'David Thomas, Andrew Hunt',
     },
   ];
 }
