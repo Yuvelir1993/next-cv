@@ -2,12 +2,12 @@
 
 import React from 'react';
 
-const MyJourney: React.FC = () => {
+const MySummary: React.FC = () => {
   return (
     <div className="mt-6 w-full rounded-lg bg-gray-100 p-4">
       <div className="text-center">
         <h2 className="relative mb-4 inline-block text-2xl font-bold">
-          My DevOps Experience
+          My Experience
           <span className="mx-auto mt-1 block w-1/2 border-b-2 border-gray-400"></span>
         </h2>
       </div>
@@ -60,4 +60,4 @@ const MyJourney: React.FC = () => {
   );
 };
 
-export default MyJourney;
+export default MySummary;
