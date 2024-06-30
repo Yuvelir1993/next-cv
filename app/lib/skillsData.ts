@@ -45,125 +45,118 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'Linux',
       icon: FcLinux,
-      personal_experience: 'Experience with Linux.',
+      personal_experience: `Good knowledge of Linux basics and shell scripting, which allows to confidently operate in containerized environments. Having experience only with Ubuntu distribution.`,
     },
     {
       name: 'ELK Stack',
       icon: SiElasticsearch,
-      personal_experience:
-        'Experience with the ELK Stack (Elasticsearch, Logstash, Kibana) for log management and data analysis.',
+      personal_experience: `Experience with the ELK Stack (Elasticsearch, Logstash, Kibana, Beats). Enabled in [BOC Group](https://www.boc-group.com/en/) for:
+      1️⃣ log data analysis collected from distributed teams Jenkins instances to derive General-level and KPIs measurements. Have experience of building businsess-valuable dashboards and using Elasticsearch queries. Have experience with data pipelines automated tests by creating custom framework driven by declarative 'yml' test cases file. Having experience with automating local end-to-end ELK + Jenkins set up with automatic raw data ingestion and data pipelines tests to enable even unexperienced developers evolve data pipelines.
+      2️⃣ microservices-based system for collecting logs.`,
     },
     {
       name: 'Prometheus/Grafana',
       icon: SiPrometheus,
-      personal_experience: 'Experience with Prometheus and Grafana.',
+      personal_experience: `Experienced with Prometheus and Grafana for collecting metrics from containers and VMs and building businsess-valuable dashboards.`,
     },
     {
       name: 'OpenTelemetry',
       icon: SiOpentelemetry,
-      personal_experience:
-        'Experience with OpenTelemetry for observability and monitoring.',
+      personal_experience: `Experienced with OpenTelemetry for collecting observability signals in polyglot distributed system.`,
     },
     {
       name: 'Jaeger',
       icon: SiJaeger,
-      personal_experience:
-        'Experience with Jaeger for distributed tracing and monitoring.',
+      personal_experience: `Experienced with Jaeger for collecting distributed traces.`,
     },
     {
       name: 'Fluentbit',
       icon: SiFluentbit,
-      personal_experience: 'Experience with Fluentbit.',
+      personal_experience: `Experienced with Fluentbit to collect containers logs for ELK integration.`,
     },
     {
       name: 'SonarQube',
       icon: SiSonarqube,
-      personal_experience:
-        'Experience with SonarQube for static code analysis and code quality monitoring.',
+      personal_experience: `Enabled SonarQube + SonarLint in [BOC Group](https://www.boc-group.com/en/) organization for build/test pipelines executed in different VM environments with all necessary docu/guides for all BOC developers.`,
     },
     {
       name: 'Docker',
       icon: FaDocker,
-      personal_experience:
-        'Proficient in containerizing applications using Docker, creating Dockerfiles, and managing containers.',
+      personal_experience: `Able to set up dockerized environments for both microservices and single service solutions. Able to debug, troubleshoot and optimize images for efficient resources usage.`,
     },
     {
       name: 'Jenkins',
       icon: FaJenkins,
-      personal_experience:
-        'Experience with continuous integration and continuous deployment (CI/CD) pipelines using Jenkins.',
+      personal_experience: `Experienced with CI/CD pipelines using Jenkins. Proficient in modelling and creation pipelines. Experienced in creation and maintaining pipelines-as-a-product for organizational-wide reusing with integration into the whole plugins, libraries and services ecosystem.`,
     },
     {
       name: 'JFrog Artifactory',
       icon: SiJfrog,
-      personal_experience:
-        'Experience with JFrog Artifactory for artifact management and repository hosting.',
+      personal_experience: `Experienced with [JFrog Artifactory](https://jfrog.com/artifactory/) for artifact management and repository hosting.`,
     },
     {
       name: 'Rhodecode',
       icon: IoIosGitBranch,
-      personal_experience:
-        'Experience with Rhodecode for code hosting, review, and management.',
+      personal_experience: `Experienced with [Rhodecode](https://rhodecode.com/) sourcecode platform.`,
     },
     {
       name: 'Git',
       icon: FaGitAlt,
-      personal_experience:
-        'Experience with version control using Git, managing branches, and collaborating on code.',
+      personal_experience: `Experienced with version control using Git, managing branches, and collaborating on code. Integrated git hooks and reusable git scripts into platform layer Gradle plugins and miscellaneous libraries.`,
     },
     {
       name: 'Mercurial',
       icon: SiMercurial,
-      personal_experience:
-        'Experience with Mercurial for version control, similar to Git.',
+      personal_experience: `Experienced with Mercurial for version control, similar to Git. Integrated reusable hg scripts into platform layer Gradle plugins and miscellaneous libraries.`,
     },
     {
       name: 'Kafka',
       icon: SiApachekafka,
-      personal_experience:
-        'Experience with Apache Kafka for real-time data streaming and event-driven architecture.',
+      personal_experience: `Integrated Apache Kafka into ELK stack for Beats->to->Logstash data streaming. Having understanding of event-driven architecture and basic Kafka capabilities. A bit of experience with basic Kafka cmd tools`,
     },
     {
       name: 'Redis',
       icon: SiRedis,
-      personal_experience:
-        'Experience with Redis for caching and in-memory data storage.',
+      personal_experience: `Low experience of Redis usage in microservices-based system.`,
     },
     {
-      name: 'Terminals (VMs access), PuTTY (hosts access)',
+      name: `Terminals (VMs access), PuTTY (hosts access), ...`,
       icon: BsTerminalSplit,
-      personal_experience:
-        'Experience with using terminal and PuTTY for remote server access and management.',
+      personal_experience: `Experience with using terminal toolings for remote server access and management.`,
     },
     {
       name: 'Terraform',
       icon: SiTerraform,
-      personal_experience:
-        'Experience with using terminal and PuTTY for remote server access and management.',
-    },
-    {
-      name: 'Saltstack',
-      icon: GrDocumentConfig,
-      personal_experience:
-        'Experience with using terminal and PuTTY for remote server access and management.',
-    },
-    {
-      name: 'AWS',
-      icon: FaAws,
-      personal_experience:
-        'Experience with using terminal and PuTTY for remote server access and management.',
+      personal_experience: `Experienced with simple AWS infrastructure set ups. Good concepts knowledge.`,
     },
     {
       name: 'Nomad',
       icon: SiNomad,
       personal_experience:
-        'Experience with using terminal and PuTTY for remote server access and management.',
+        'Experience with using [Hashicorp Nomad](https://www.nomadproject.io/) for managing End-To-End products deployments like [ADONIS](https://www.boc-group.com/en/adonis/), [ADOIT](https://www.boc-group.com/en/adoit/) or [ADOGRC](https://www.boc-group.com/pl/).',
+    },
+    {
+      name: 'Saltstack',
+      icon: GrDocumentConfig,
+      personal_experience: `A bit experienced in writing and executing Salt statements. Understanding of main [SaltStack](https://saltproject.io/index.html) concepts and downsides.`,
+    },
+    {
+      name: 'AWS',
+      icon: FaAws,
+      personal_experience: `Basic knowledge of Cloud Computing Fundamentals. Currently, one of the main experience achieving goals for 2024.
+
+      Only prototyping experience with:
+      - IAM
+      - EC2
+      - EC2 Builder
+      - ECR
+      - S3`,
     },
     {
       name: 'Kubernetes',
       icon: SiKubernetes,
       personal_experience:
-        'Experience with using terminal and PuTTY for remote server access and management.',
+        'Only basic knowledge of main concepts. Currently, one of the main experience achieving goals for 2024.',
     },
   ];
 
