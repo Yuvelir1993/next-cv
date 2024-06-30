@@ -18,9 +18,9 @@ const Hobbies: React.FC = () => {
         <p className={`${inter.className} text-base text-gray-700`}>
           My past experience is making both commercial and just-for-myself and friends photos. Join my{' '}
           <a href="https://photolozovikov-main.web.app/" className="text-blue-600 underline hover:text-blue-800">
-            photo.lozovikov 
+            photo.lozovikov
           </a>
-            web page for more 📸
+          web page for more 📸
         </p>
       </div>
 
@@ -28,7 +28,7 @@ const Hobbies: React.FC = () => {
         <h3 className="text-xl font-semibold">Fragrances</h3>
         <p className={`${inter.className} text-base text-gray-700`}>
           I'm quite experienced person in niche fragrances, also having personal collection. But no worries, I am not the person who will irritate you in the office by
-          applying the whole bottle 😄 Also, sharing my knowledges, experience and emotions on my {' '}
+          applying the whole bottle 😄 Also, sharing my knowledges, experience and emotions on my{' '}
           <a href="www.youtube.com/@lozovikov" className="text-blue-600 underline hover:text-blue-800">
             youtube channel
           </a>
