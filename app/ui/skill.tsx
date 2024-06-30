@@ -1,7 +1,9 @@
 import React from 'react';
 import clsx from 'clsx';
 import TechIcon from '@/app/ui/techIcon';
+import ReactMarkdown from 'react-markdown';
 import { Skill } from '@/app/lib/skillsData';
+import '@/app/ui/global.css';
 
 interface SkillProps {
   skill: Skill;
@@ -24,7 +26,9 @@ const SkillComponent: React.FC<SkillProps> = ({ skill, index }) => {
         />
         <h2 className="ml-4 text-lg font-semibold">{skill.name}</h2>
       </div>
-      <p className="mt-2 text-sm text-gray-500">{skill.personal_experience}</p>
+      <ReactMarkdown className="markdown-content mt-2 text-sm text-gray-500">
+        {skill.personal_experience}
+      </ReactMarkdown>
     </div>
   );
 };

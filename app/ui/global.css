@@ -16,3 +16,12 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.markdown-content a {
+  color: #3182ce;
+  text-decoration: underline;
+}
+
+.markdown-content a:hover {
+  color: #2b6cb0;
+}

@@ -57,12 +57,18 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'Java',
       icon: FaJava,
-      personal_experience: `Main experience gained from:
-      1) Developing REST APIs for BOC products like https://www.adonis-community.com/en/. 
-      Experienced in migration java - based solutions from old jdk-8/11 to new jdk-17/21 and running them on different Tomcat environments like Tomcat 9 and Tomcat 10.1 with all necessary javax/jakarta adaptations and ensuring backwards compatibility of codebases to still be able support old versions.
-      2) Decent experience gained in creation platform-layer Gradle plugins for multiple teams reused in the whole organization for building and testing modules/libraries and products themselves. 
-      Experienced in smooth gradual builds migration from old-based Gradle 6.5 + jdk 8/11 build to new-based Gradle 8.7 + jdk 17/21 - based modules/libraries/products builds on the organization level. 
-      Experienced in using frameworks/libraries: Jersey, TestNG, Maven, Ant (not a favorite one ;)), Gradle`,
+      personal_experience: `Main experience gained from:      
+    1. Developing REST APIs for BOC products like [ADONIS](https://www.adonis-community.com/en/).
+        Experienced in migration java-based solutions from old jdk-8/11 to new jdk-17/21 and running them on different Tomcat environments like Tomcat 9 and Tomcat 10.1 with all necessary javax/jakarta adaptations and ensuring backwards compatibility of codebases to still be able support old versions.
+    2. Decent experience gained in creation platform-layer Gradle plugins for multiple teams reused in the whole organization for building and testing modules/libraries and products themselves.
+        Experienced in smooth gradual builds migration from old-based Gradle 6.5 + jdk 8/11 build to new-based Gradle 8.7 + jdk 17/21 - based modules/libraries/products builds on the organization level.
+    
+    Experienced in using frameworks/libraries:
+    - Jersey
+    - TestNG
+    - Maven
+    - Ant (not a favorite one 😉)
+    - Gradle`,
     },
     {
       name: 'JavaScript',
