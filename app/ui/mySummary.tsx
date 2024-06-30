@@ -42,7 +42,7 @@ const MySummary: React.FC = () => {
         </p>
       </div>
 
-      <div>
+      <div className="mb-6">
         <h3 className="text-xl font-semibold">Platform Engineer</h3>
         <p className="mb-2 italic text-gray-600">Experience: 0.5 years</p>
         <p className="text-base text-gray-700">
@@ -54,6 +54,31 @@ const MySummary: React.FC = () => {
           level from people of multiple teams with diverse responsibilities by
           providing clear documentations, guides, techtalk presentations and
           hands on workshops.
+        </p>
+      </div>
+
+      <div className="text-center">
+        <h2 className="relative mb-4 inline-block text-2xl font-bold">
+          My Passions
+          <span className="mx-auto mt-1 block w-1/2 border-b-2 border-gray-400"></span>
+        </h2>
+      </div>
+
+      <div className="mt-4">
+        <p className="mb-2 text-base text-gray-700">
+          My main passion in working with technologies is providing reusable
+          solutions to not reinvent the same wheel in different ways to give
+          everyone more possibilities to be focused on their key business.
+        </p>
+        <p className="text-base text-gray-700">
+          My main passion in working with other people is to pave them right
+          paths to avoid mistakes I've already made and pass my knowledges so
+          they can move faster towards the goals they want to.
+        </p>
+        <p className="text-base text-gray-700">
+          My main passion in working with myself is to grow my skills to solve
+          problems on scale, to not stuck in my current approaches and keep
+          sharing my joy from the process.
         </p>
       </div>
     </div>
