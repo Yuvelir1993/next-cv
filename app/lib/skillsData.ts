@@ -22,12 +22,14 @@ import {
   SiRedis,
   SiNomad,
   SiJfrog,
+  SiFluentbit,
 } from 'react-icons/si';
 import { TbSql } from 'react-icons/tb';
 import { DiGroovy } from 'react-icons/di';
 import { IoIosGitBranch } from 'react-icons/io';
 import { BsTerminalSplit } from 'react-icons/bs';
 import { GrDocumentConfig } from 'react-icons/gr';
+import { FcLinux } from 'react-icons/fc';
 
 export interface Skill {
   name: string;
@@ -40,6 +42,12 @@ export interface Skill {
 export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
   const opsSkills: Skill[] = [
     {
+      name: 'Linux',
+      icon: FcLinux,
+      personal_experience:
+        'Experience with Linux.',
+    },
+    {
       name: 'ELK Stack',
       icon: SiElasticsearch,
       personal_experience:
@@ -50,6 +58,18 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
       icon: SiOpentelemetry,
       personal_experience:
         'Experience with OpenTelemetry for observability and monitoring.',
+    },
+    {
+      name: 'Jaeger',
+      icon: SiJaeger,
+      personal_experience:
+        'Experience with Jaeger for distributed tracing and monitoring.',
+    },
+    {
+      name: 'Fluentbit',
+      icon: SiFluentbit,
+      personal_experience:
+        'Experience with Fluentbit.',
     },
     {
       name: 'Jaeger',
