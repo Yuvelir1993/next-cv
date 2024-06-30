@@ -143,7 +143,7 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'AWS',
       icon: FaAws,
-      personal_experience: `Basic knowledge of Cloud Computing Fundamentals. Currently, one of the main experience achieving goals for 2024.
+      personal_experience: `Basic knowledge of Cloud Computing Fundamentals. 🚀 Currently, one of the main experience achieving goals for 2024.
 
       Only prototyping experience with:
       - IAM
@@ -156,7 +156,7 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
       name: 'Kubernetes',
       icon: SiKubernetes,
       personal_experience:
-        'Only basic knowledge of main concepts. Currently, one of the main experience achieving goals for 2024.',
+        'Only basic knowledge of main concepts. 🚀 Currently, one of the main experience achieving goals for 2024.',
     },
   ];
 
