@@ -1,5 +1,3 @@
-// In Page.tsx
-
 import React from 'react';
 import Skills from '@/app/ui/skills';
 import Header from '@/app/ui/header';
@@ -7,6 +5,7 @@ import TextSection from '@/app/ui/headerTextSection';
 import Courses from '@/app/ui/courses';
 import Books from '@/app/ui/books';
 import MySummary from '@/app/ui/mySummary';
+import Hobbies from '@/app/ui/hobbies';
 
 export default function Page() {
   return (
@@ -24,6 +23,7 @@ export default function Page() {
         <Courses />
         <Books />
       </div>
+      <Hobbies />
     </main>
   );
 }
