@@ -7,13 +7,27 @@ import {
   FaJsSquare,
   FaJava,
   FaTerminal,
+  FaGitAlt,
 } from 'react-icons/fa';
-
-import { FaGolang, FaGears } from 'react-icons/fa6';
-import { SiTerraform, SiKubernetes } from 'react-icons/si';
+import { FaGolang, FaGears, FaHtml5 } from 'react-icons/fa6';
+import {
+  SiTerraform,
+  SiKubernetes,
+  SiElasticsearch,
+  SiOpentelemetry,
+  SiJaeger,
+  SiSonarqube,
+  SiMercurial,
+  SiApachekafka,
+  SiRedis,
+  SiNomad,
+  SiJfrog,
+} from 'react-icons/si';
 import { TbSql } from 'react-icons/tb';
 import { DiGroovy } from 'react-icons/di';
-import { GiGears } from 'react-icons/gi';
+import { IoIosGitBranch } from 'react-icons/io';
+import { BsTerminalSplit } from 'react-icons/bs';
+import { GrDocumentConfig } from 'react-icons/gr';
 
 export interface Skill {
   name: string;
@@ -26,10 +40,28 @@ export interface Skill {
 export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
   const opsSkills: Skill[] = [
     {
-      name: 'AWS',
-      icon: FaAws,
+      name: 'ELK Stack',
+      icon: SiElasticsearch,
       personal_experience:
-        'Experience with deploying and managing applications using AWS services like EC2, S3, Lambda, and RDS.',
+        'Experience with the ELK Stack (Elasticsearch, Logstash, Kibana) for log management and data analysis.',
+    },
+    {
+      name: 'OpenTelemetry',
+      icon: SiOpentelemetry,
+      personal_experience:
+        'Experience with OpenTelemetry for observability and monitoring.',
+    },
+    {
+      name: 'Jaeger',
+      icon: SiJaeger,
+      personal_experience:
+        'Experience with Jaeger for distributed tracing and monitoring.',
+    },
+    {
+      name: 'SonarQube',
+      icon: SiSonarqube,
+      personal_experience:
+        'Experience with SonarQube for static code analysis and code quality monitoring.',
     },
     {
       name: 'Docker',
@@ -38,22 +70,82 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
         'Proficient in containerizing applications using Docker, creating Dockerfiles, and managing containers.',
     },
     {
-      name: 'Kubernetes',
-      icon: SiKubernetes,
+      name: 'Jenkins',
+      icon: FaJenkins,
       personal_experience:
-        'Skilled in orchestrating containerized applications with Kubernetes, setting up clusters, and managing workloads.',
+        'Experience with continuous integration and continuous deployment (CI/CD) pipelines using Jenkins.',
+    },
+    {
+      name: 'JFrog Artifactory',
+      icon: SiJfrog,
+      personal_experience:
+        'Experience with JFrog Artifactory for artifact management and repository hosting.',
+    },
+    {
+      name: 'Rhodecode',
+      icon: IoIosGitBranch,
+      personal_experience:
+        'Experience with Rhodecode for code hosting, review, and management.',
+    },
+    {
+      name: 'Git',
+      icon: FaGitAlt,
+      personal_experience:
+        'Experience with version control using Git, managing branches, and collaborating on code.',
+    },
+    {
+      name: 'Mercurial',
+      icon: SiMercurial,
+      personal_experience:
+        'Experience with Mercurial for version control, similar to Git.',
+    },
+    {
+      name: 'Kafka',
+      icon: SiApachekafka,
+      personal_experience:
+        'Experience with Apache Kafka for real-time data streaming and event-driven architecture.',
+    },
+    {
+      name: 'Redis',
+      icon: SiRedis,
+      personal_experience:
+        'Experience with Redis for caching and in-memory data storage.',
+    },
+    {
+      name: 'Terminals (VMs access), PuTTY (hosts access)',
+      icon: BsTerminalSplit,
+      personal_experience:
+        'Experience with using terminal and PuTTY for remote server access and management.',
     },
     {
       name: 'Terraform',
       icon: SiTerraform,
       personal_experience:
-        'Expert in Infrastructure as Code (IaC) with Terraform, automating cloud infrastructure deployment.',
+        'Experience with using terminal and PuTTY for remote server access and management.',
     },
     {
-      name: 'Jenkins',
-      icon: FaJenkins,
+      name: 'Saltstack',
+      icon: GrDocumentConfig,
       personal_experience:
-        'Experience with continuous integration and continuous deployment (CI/CD) pipelines using Jenkins.',
+        'Experience with using terminal and PuTTY for remote server access and management.',
+    },
+    {
+      name: 'AWS',
+      icon: FaAws,
+      personal_experience:
+        'Experience with using terminal and PuTTY for remote server access and management.',
+    },
+    {
+      name: 'Nomad',
+      icon: SiNomad,
+      personal_experience:
+        'Experience with using terminal and PuTTY for remote server access and management.',
+    },
+    {
+      name: 'Kubernetes',
+      icon: SiKubernetes,
+      personal_experience:
+        'Experience with using terminal and PuTTY for remote server access and management.',
     },
   ];
 
@@ -86,7 +178,8 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
       - React
       - Node.js
       - Jest
-      - jQuery`,
+      - jQuery
+      - gulp.js`,
     },
     {
       name: 'Python',
@@ -125,6 +218,11 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
       name: 'Algorithms',
       icon: FaGears,
       personal_experience: `Having experience in creating algorithms, including working with graphs. One of prominent projects where I implemented those knowledges are [BPMN Process Simulation](https://docs.boc-group.com/adonis/en/docs/16.0/user_manual/sim-000000/) and [BPMN Process Stepper](https://docs.boc-group.com/adonis/en/docs/16.0/user_manual/pst-000000/).`,
+    },
+    {
+      name: 'HTML/CSS/SASS/...',
+      icon: FaHtml5,
+      personal_experience: `Having experience in creating simple html pages. One of examples is my personal [photo portofilo](https://photolozovikov-main.web.app/) and current CV.`,
     },
   ];
 
