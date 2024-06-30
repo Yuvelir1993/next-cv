@@ -17,6 +17,7 @@ export interface Skill {
   icon?: IconType;
   image_url?: string;
   personal_experience: string;
+  related_technologies?: string;
 }
 
 export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
@@ -58,41 +59,51 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
       name: 'Java',
       icon: FaJava,
       personal_experience: `Main experience gained from:      
-    1. Developing REST APIs for BOC products like [ADONIS](https://www.adonis-community.com/en/).
+  1️⃣ Developing REST APIs for BOC products like [ADONIS](https://www.boc-group.com/en/adonis/) or [ADOIT](https://www.boc-group.com/en/adoit/).
         Experienced in migration java-based solutions from old jdk-8/11 to new jdk-17/21 and running them on different Tomcat environments like Tomcat 9 and Tomcat 10.1 with all necessary javax/jakarta adaptations and ensuring backwards compatibility of codebases to still be able support old versions.
-    2. Decent experience gained in creation platform-layer Gradle plugins for multiple teams reused in the whole organization for building and testing modules/libraries and products themselves.
-        Experienced in smooth gradual builds migration from old-based Gradle 6.5 + jdk 8/11 build to new-based Gradle 8.7 + jdk 17/21 - based modules/libraries/products builds on the organization level.
-    
-    Experienced in using frameworks/libraries:
-    - Jersey
-    - TestNG
-    - Maven
-    - Ant (not a favorite one 😉)
-    - Gradle`,
+  2️⃣ Decent experience gained in creation platform-layer Gradle plugins for multiple teams reused in the whole organization for building and testing modules/libraries and products themselves.
+        Experienced in smooth gradual builds migration from old-based Gradle 6.5 + jdk 8/11 build to new-based Gradle 8.7 + jdk 17/21 - based modules/libraries/products builds on the organization level.`,
+      related_technologies: `
+      Experienced in using frameworks/libraries:
+      - Jersey
+      - TestNG
+      - Maven
+      - Ant (not a favorite one 😉)
+      - Gradle`,
     },
     {
       name: 'JavaScript',
       icon: FaJsSquare,
-      personal_experience:
-        'Most experience is derived from writing server-side logic and front-end components using Ext.js framework. Also a bit experienced in TypeScript, including frameworks like Next.js, React and Node.js, which were used for creating test results dashboard for build pipelines tests results, integrated into multiple teams pipelines. This CV is also created using Next.js and React.',
+      personal_experience: `Most experience is derived from writing server-side logic and front-end components for products like [ADONIS](https://www.boc-group.com/en/adonis/) or [ADOIT](https://www.boc-group.com/en/adoit/) and their customization plugins. One of such plugins is a [BPMN Process Simulation](https://docs.boc-group.com/adonis/en/docs/16.0/user_manual/sim-000000/) and [BPMN Process Stepper](https://docs.boc-group.com/adonis/en/docs/16.0/user_manual/pst-000000/). Also, were using modern Js/Ts + React tech stack for creating organizationally-platform level test results dashboard for build pipelines tests results, integrated into multiple teams pipelines. This CV is also created using such tech stack as well. Also a bit experienced with TypeScript, but considering it as a preferred way to write Js-based code.`,
+      related_technologies: `
+      Experienced in using frameworks/libraries:
+      - Ext.js
+      - Next.js
+      - React
+      - Node.js
+      - Jest`,
     },
     {
       name: 'Python',
       icon: FaPython,
-      personal_experience:
-        'Most knowledge derived from writing organizationally-wide libraries ecosystem, which were reused in build pipelines and local custom development tooling set ups. Have experience of writing Temporal https://temporal.io/ workers in Python. Also, used Python as a core language for creation data testing framework for Elasticsearch and KPIs data proceeding derived from multiple data sources. More about my way of thinking of data proceeding you can read in my article: https://medium.com/@plozovikov/data-mesh-d12768970271',
+      personal_experience: `Most knowledge derived from writing organizationally-wide libraries ecosystem, which were reused in build pipelines and local custom development tooling set ups. Having experience of writing [Temporal](https://temporal.io/) workers in Python. Also, used Python as a core language for creation data testing framework for Elasticsearch and KPIs data proceeding derived from multiple data sources. More about my way of thinking of data proceeding you can read in my [Data Mesh](https://medium.com/@plozovikov/data-mesh-d12768970271) article.`,
+      related_technologies: `
+      Experienced in using frameworks/libraries:
+      - Poetry
+      - Pytest
+      - Pandas
+      - Temporal`,
     },
     {
-      name: 'Golang',
+      name: 'GoLang',
       icon: FaGolang,
-      personal_experience:
-        'Built knowledge on GoLang technology during creation deployment and data proceeding workflows in https://temporal.io/ technology in microservices-based system.',
+      personal_experience: `Built knowledge on GoLang technology during creation deployment and data proceeding workflows in [Temporal](https://temporal.io/) technology in microservices-based system.`,
     },
     {
       name: 'Bash',
       icon: FaTerminal,
       personal_experience:
-        'Basic knowledge which allows me doing simple administrative things when working on remote VMs or during containers debugging.',
+        `Having basic knowledge which allows me doing simple administrative things when working on remote VMs or during containers debugging. Also, used bash scripts for 1-click [ELK stack](https://www.elastic.co/elastic-stack) local dev installation.`,
     },
   ];
 

@@ -29,6 +29,11 @@ const SkillComponent: React.FC<SkillProps> = ({ skill, index }) => {
       <ReactMarkdown className="markdown-content mt-2 text-sm text-gray-500">
         {skill.personal_experience}
       </ReactMarkdown>
+      {skill.related_technologies && (
+        <ReactMarkdown className="related-technologies-content mt-4 text-sm text-gray-600">
+          {skill.related_technologies}
+        </ReactMarkdown>
+      )}
     </div>
   );
 };
