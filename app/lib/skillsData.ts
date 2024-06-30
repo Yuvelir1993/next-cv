@@ -86,13 +86,15 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'Python',
       icon: FaPython,
-      personal_experience: `Most knowledge derived from writing organizationally-wide libraries ecosystem, which were reused in build pipelines and local custom development tooling set ups. Having experience of writing [Temporal](https://temporal.io/) workers in Python. Also, used Python as a core language for creation data testing framework for Elasticsearch and KPIs data proceeding derived from multiple data sources. More about my way of thinking of data proceeding you can read in my [Data Mesh](https://medium.com/@plozovikov/data-mesh-d12768970271) article.`,
+      personal_experience: `Experienced in writing organizationally-wide libraries and scripting ecosystem, which are reused in build pipelines and local custom development tooling. Experiences in migration old->to->new Python codebases. Having experience of writing [Temporal](https://temporal.io/) workers in Python. Also, used Python as a core language for creation data testing framework for Elasticsearch and KPIs data proceeding derived from multiple data sources. More about my way of thinking of data proceeding you can read in my [Data Mesh](https://medium.com/@plozovikov/data-mesh-d12768970271) article.`,
       related_technologies: `
       Experienced in using frameworks/libraries:
       - Poetry
       - Pytest
       - Pandas
-      - Temporal`,
+      - Temporal
+      - MyPy
+      - Ruff`,
     },
     {
       name: 'GoLang',
