@@ -9,8 +9,8 @@ interface SkillsProps {
 
 export default async function Skills({ type }: SkillsProps) {
   const skills: Skill[] = await fetchSkills(type);
-  const devDescription = 'Skilled in software development and programming.';
-  const opsDescription = 'Expert in operations and infrastructure management.';
+  const devDescription = 'Pure software development and programming skills.';
+  const opsDescription = 'Expertise in operations and infrastructure management.';
 
   return (
     <div className="flex w-full flex-col items-center md:col-span-4">
