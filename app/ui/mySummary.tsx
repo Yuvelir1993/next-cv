@@ -42,7 +42,7 @@ const MySummary: React.FC = () => {
 
       <div className="mb-6">
         <h3 className="text-xl font-semibold">Platform Engineer</h3>
-        <p className="mb-2 italic text-gray-600">Experience: 0.5 years</p>
+        <p className="mb-2 italic text-gray-600">Experience: 0.5+ years</p>
         <p className={`${inter.className} text-base text-gray-700`}>
           Gaining Ops and working with multiple teams experience, I grew more into Platform Developer role, where one of my strongest responsibilities are delivering
           organization-scale libraries, plugins and evolving quality-supportive software and creating custom frameworks if needed. With this, still keeping lowest
