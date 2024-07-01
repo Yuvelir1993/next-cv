@@ -29,7 +29,7 @@ const Hobbies: React.FC = () => {
         <p className={`${inter.className} text-base text-gray-700`}>
           I'm quite experienced person in niche fragrances, also having personal collection. But no worries, I am not the person who will irritate you in the office by
           applying the whole bottle 😄 Also, sharing my knowledges, experience and emotions on my{' '}
-          <a href="www.youtube.com/@lozovikov" className="text-blue-600 underline hover:text-blue-800">
+          <a href="https://youtube.com/@lozovikov?si=u4yNtgVffQXwHBSb" className="text-blue-600 underline hover:text-blue-800">
             youtube channel
           </a>
           🎬
