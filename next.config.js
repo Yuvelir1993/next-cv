@@ -3,6 +3,7 @@ const nextConfig = {
   experimental: {
     ppr: false,
   },
+  output: 'export',
 };
 
 module.exports = nextConfig;
