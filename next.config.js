@@ -4,6 +4,9 @@ const nextConfig = {
     ppr: false,
   },
   output: 'export',
+  images: {
+    unoptimized: true
+  }
 };
 
 module.exports = nextConfig;
