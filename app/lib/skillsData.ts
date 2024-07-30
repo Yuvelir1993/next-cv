@@ -36,14 +36,22 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'Linux',
       icon: FcLinux,
-      personal_experience: `Good knowledge of Linux basics and shell scripting, which allows to confidently operate in containerized environments. Having experience only with Ubuntu distribution.`,
+      personal_experience: `Good knowledge of Linux basics, security practices and tooling, which allows to confidently operate in containerized environments.`,
     },
     {
       name: 'ELK Stack',
       icon: SiElasticsearch,
-      personal_experience: `Experience with the ELK Stack (Elasticsearch, Logstash, Kibana, Beats). Enabled in [BOC Group](https://www.boc-group.com/en/) for:
-      1️⃣ log data analysis collected from distributed teams Jenkins instances to derive General-level and KPIs measurements. Have experience of building businsess-valuable dashboards and using Elasticsearch queries. Have experience with data pipelines automated tests by creating custom framework driven by declarative 'yml' test cases file. Having experience with automating local end-to-end ELK + Jenkins set up with automatic raw data ingestion and data pipelines tests to enable even unexperienced developers evolve data pipelines.
-      2️⃣ microservices-based system for collecting logs.`,
+      personal_experience: `Experience with the ELK Stack (Elasticsearch, Logstash, Kibana, APM, Beats). Enabled in [BOC Group](https://www.boc-group.com/en/) for:
+
+      - Log data analysis collected from distributed Jenkins instances
+         to derive General-level and KPIs measurements.
+      - Building businsess-valuable dashboards and using Elasticsearch queries.
+      - Data pipelines automated tests by creating 
+          custom framework driven by declarative 'yml' test cases file.
+      - Automating local end-to-end ELK + Jenkins set up with 
+          automatic raw data ingestion and data pipelines tests to enable 
+            everyone being able to contribute to the data pipelines.
+      - Microservices-based system for collecting logs.`,
     },
     {
       name: 'Prometheus/Grafana',
@@ -53,7 +61,7 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'OpenTelemetry',
       icon: SiOpentelemetry,
-      personal_experience: `Experienced with OpenTelemetry for collecting observability signals in polyglot distributed system.`,
+      personal_experience: `Experienced with OpenTelemetry for collecting observability signals in polyglot distributed system. My [GitHub OTEL](https://github.com/Yuvelir1993/OTEL) repo.`,
     },
     {
       name: 'Jaeger',
@@ -73,22 +81,22 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'Docker',
       icon: FaDocker,
-      personal_experience: `Able to set up dockerized environments for both microservices and single service solutions. Able to debug, troubleshoot and optimize images for efficient resources usage.`,
+      personal_experience: `Containerizing microservices and 3rd-party services. Able to debug, secure, troubleshoot and optimize images for efficient resources usage.`,
     },
     {
       name: 'Jenkins',
       icon: FaJenkins,
-      personal_experience: `Experienced with CI/CD pipelines using Jenkins. Proficient in modelling and creation pipelines. Experienced in creation and maintaining pipelines-as-a-product for organizational-wide reusing with integration into the whole plugins, libraries and services ecosystem.`,
+      personal_experience: `Modelling and creation CI/CD pipelines. Experienced in creation and maintaining pipelines-as-a-product for organizational-wide reusing with integration into the modules, plugins, libraries and services ecosystem.`,
     },
     {
       name: 'JFrog Artifactory',
       icon: SiJfrog,
-      personal_experience: `Experienced with [JFrog Artifactory](https://jfrog.com/artifactory/) for artifact management and repository hosting.`,
+      personal_experience: `Experienced with [JFrog Artifactory](https://jfrog.com/artifactory/) for artifacts management, setting up users/groups and it's API usage.`,
     },
     {
       name: 'Rhodecode',
       icon: IoIosGitBranch,
-      personal_experience: `Experienced with [Rhodecode](https://rhodecode.com/) sourcecode platform.`,
+      personal_experience: `Experienced with [Rhodecode](https://rhodecode.com/) source code platform.`,
     },
     {
       name: 'Git',
@@ -103,22 +111,22 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'Kafka',
       icon: SiApachekafka,
-      personal_experience: `Integrated Apache Kafka into ELK stack for Beats->to->Logstash data streaming. Having understanding of event-driven architecture and basic Kafka capabilities. A bit of experience with basic Kafka cmd tools`,
+      personal_experience: `Integrated Apache Kafka into ELK stack for Beats->to->Logstash data streaming. Having understanding of event-driven architecture and basic Kafka capabilities. A bit of experience with basic Kafka cmd tools.`,
     },
     {
       name: 'Redis',
       icon: SiRedis,
-      personal_experience: `Low experience of Redis usage in microservices-based system.`,
+      personal_experience: `Experience with Redis in Node.js-based microservice.`,
     },
     {
-      name: `Terminals (VMs access), PuTTY (hosts access), ...`,
+      name: `Terminals (VMs access), PuTTY/MtPuTTY (hosts access), ...`,
       icon: BsTerminalSplit,
       personal_experience: `Experience with using terminal toolings for remote server access and management.`,
     },
     {
       name: 'Terraform',
       icon: SiTerraform,
-      personal_experience: `Experienced with simple AWS infrastructure set ups. Good concepts knowledge.`,
+      personal_experience: `Experienced with AWS infrastructure set up. My [Terraform GitHub](https://github.com/Yuvelir1993/terraform) repo.`,
     },
     {
       name: 'Nomad',
@@ -129,24 +137,26 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'Saltstack',
       icon: GrDocumentConfig,
-      personal_experience: `A bit experienced in writing and executing Salt statements. Understanding of main [SaltStack](https://saltproject.io/index.html) concepts and downsides.`,
+      personal_experience: `A bit experienced in writing and executing Salt statements to provision Windows VMs and Linux hosts. Understanding of main [SaltStack](https://saltproject.io/index.html) concepts and downsides.`,
     },
     {
       name: 'AWS',
       icon: FaAws,
       personal_experience: `Basic knowledge of Cloud Computing Fundamentals. 🚀 Currently, one of the main experience achieving goals for 2024.
 
-      Only prototyping experience with:
+      Experience with:
       - IAM
-      - EC2
-      - EC2 Builder
+      - EC2: Choosing the right instance for the right goal; Setting up with Terraform
+      - EC2 Image Builder: Building Docker images composed of robust tested components
       - ECR
-      - S3`,
+      - S3
+      - CDK
+      - AWS CLI`,
     },
     {
       name: 'Kubernetes',
       icon: SiKubernetes,
-      personal_experience: 'Only basic knowledge of main concepts. 🚀 Currently, one of the main experience achieving goals for 2024.',
+      personal_experience: 'Basic knowledge. A bit of hands-on experience. 🚀 Currently, one of the main experience achieving goals for 2024.',
     },
   ];
 

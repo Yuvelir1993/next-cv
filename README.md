@@ -21,3 +21,7 @@ Check updates for all dependencies.
 
 `ncu -u`
 Install all new found updates.
+
+## Deploy to Firebase
+`npm run build`
+`firebase deploy`
