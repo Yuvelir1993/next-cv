@@ -13,7 +13,7 @@ Starts the development server.
 `npm run build`
 Builds the app for production.
 
-`npm start`
+`npm start` or `npx serve@latest out`
 Runs the built app in production mode.
 
 `npm-check-updates`
