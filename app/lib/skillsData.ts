@@ -218,22 +218,22 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'SQL',
       icon: TbSql,
-      personal_experience: `Having basic experience of writing queries for MsSQL database import, export and backups which are part of an automated ecosystem.`,
+      personal_experience: `Experience of writing queries for MsSQL database import, export and backups which are part of an automated ecosystem.`,
     },
     {
       name: 'Groovy',
       icon: DiGroovy,
-      personal_experience: `Gained experience from writing Jenkinsfiles and custom Gradle tasks logic.`,
+      personal_experience: `Writing Jenkinsfiles and custom Gradle tasks logic.`,
     },
     {
       name: 'Algorithms',
       icon: FaGears,
-      personal_experience: `Having experience in creating algorithms, including working with graphs. One of prominent projects where I implemented those knowledges are [BPMN Process Simulation](https://docs.boc-group.com/adonis/en/docs/16.0/user_manual/sim-000000/) and [BPMN Process Stepper](https://docs.boc-group.com/adonis/en/docs/16.0/user_manual/pst-000000/).`,
+      personal_experience: `Creating algorithms, including working with graphs. One of prominent projects where I implemented those knowledges are [BPMN Process Simulation](https://docs.boc-group.com/adonis/en/docs/16.0/user_manual/sim-000000/) and [BPMN Process Stepper](https://docs.boc-group.com/adonis/en/docs/16.0/user_manual/pst-000000/).`,
     },
     {
       name: 'HTML/CSS/SASS/...',
       icon: FaHtml5,
-      personal_experience: `Having experience in creating simple html pages. One of examples is my personal [photo portofilo](https://photolozovikov-main.web.app/) and current CV.`,
+      personal_experience: `Creating html pages. One of examples is my personal [photo portofilo](https://photolozovikov-main.web.app/) and current CV (which is Next.js - based).`,
     },
   ];
 
