@@ -6,9 +6,7 @@ const TextSection: React.FC = () => {
     <section className="mt-6 flex flex-col items-center justify-center text-center">
       <h2 className={`${lusitana.className} mb-2 text-2xl font-bold`}>DevOps & Platform Engineer</h2>
       <p className={`${inter.className} max-w-2xl text-lg text-gray-700`}>
-        With almost 7 years of combined experience in DevOps, software development, and platform engineering, I bring a robust skill set and a proven track record of
-        delivering high-quality solutions. My journey has taken me from customizing products as a Solutions Engineer to creating scalable, efficient infrastructure as a
-        DevOps and Platform Engineer.
+        Hello! Let me to introduce myself through the skills I have acquired and continue to improve throughout my career, which includes experience in Software Engineering, DevOps and Platform Development.
       </p>
     </section>
   );

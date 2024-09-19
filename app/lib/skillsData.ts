@@ -36,37 +36,43 @@ export const fetchSkills = async (type: 'dev' | 'ops'): Promise<Skill[]> => {
     {
       name: 'Linux',
       icon: FcLinux,
-      personal_experience: `Good knowledge of Linux basics, security practices and tooling, which allows to confidently operate in containerized environments.`,
+      personal_experience: `Good knowledge of Linux basics, containers, security practices and tooling, which allows to navigate and operate in it.`,
     },
     {
       name: 'ELK Stack',
       icon: SiElasticsearch,
-      personal_experience: `Experience with the ELK Stack (Elasticsearch, Logstash, Kibana, APM, Beats). Enabled in [BOC Group](https://www.boc-group.com/en/) for:
+      personal_experience: `Experience with the ELK Stack (Elasticsearch, Logstash, Kibana, APM, Beats):
 
       - Log data analysis collected from distributed Jenkins instances
-         to derive General-level and KPIs measurements.
-      - Building businsess-valuable dashboards and using Elasticsearch queries.
-      - Data pipelines automated tests by creating 
-          custom framework driven by declarative 'yml' test cases file.
-      - Automating local end-to-end ELK + Jenkins set up with 
-          automatic raw data ingestion and data pipelines tests to enable 
-            everyone being able to contribute to the data pipelines.
-      - Microservices-based system for collecting logs.`,
+         to derive measurements over builds statuses/anomalies and overall quality.
+      - Crafting dashboards.
+      - Made set up for multiple teams, each with private space.
+      - Creating miscellaneous Logstash pipelines and patterns.
+      - Created custom testing framework for testing Logstash pipelines by using simulated raw data.
+      - Experienced in Fluentbit + ELK.
+      - Experienced in Kafka + ELK.
+      - Experienced in OTEL + ELK.
+      - Experienced in cluster set up.
+      - Experienced in Elastic Agents set up.
+      - Experienced in APM for Microservices to collect and correlate logs, metrics and traces.
+      - Fine-tuning Filebeat for optimal logs ingestion.
+      - Able to use scripting for convenient local set up for rapid pipelines development for teams.
+      `,
     },
     {
       name: 'Prometheus/Grafana',
       icon: SiPrometheus,
-      personal_experience: `Experienced with Prometheus and Grafana for collecting metrics from containers and VMs and building businsess-valuable dashboards.`,
+      personal_experience: `Experienced with Prometheus and Grafana for collecting metrics from containers and VMs and building dashboards. Experienced in OTEL + Prometheus.`,
     },
     {
       name: 'OpenTelemetry',
       icon: SiOpentelemetry,
-      personal_experience: `Experienced with OpenTelemetry for collecting observability signals in polyglot distributed system. My [GitHub OTEL](https://github.com/Yuvelir1993/OTEL) repo.`,
+      personal_experience: `Experienced with OpenTelemetry for collecting observability signals in Java/TS/Go/Python. My [GitHub OTEL](https://github.com/Yuvelir1993/OTEL) repo.`,
     },
     {
       name: 'Jaeger',
       icon: SiJaeger,
-      personal_experience: `Experienced with Jaeger for collecting distributed traces.`,
+      personal_experience: `Experienced with Jaeger for distributed traces collecting and analysing.`,
     },
     {
       name: 'Fluentbit',
